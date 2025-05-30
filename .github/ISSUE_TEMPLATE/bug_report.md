@@ -1,29 +1,16 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
+title: 'Bug:'
 labels: ''
-assignees: ''
-
----
-
----
-
-name: "[Bug Report]"
-about: 버그 알리는 템플릿
-title: "[Bug] "
-labels: bug
-assignees: sinyoung0403
+assignees: Tcimel, dnjs5024, YongLeeCode, sinyoung0403, escomputer, alpomjeong
 
 ---
 
 <!---
-name: 🐞 버그 리포트
+🐞 버그 리포트 🐞
 about: 발생한 버그를 제보해주세요!
-title: "[BUG] "
-labels: bug
-assignees: ''
-
+ex:"Bud:Redis설정 에러 발생"
 --->
 
 ## 🐞 버그 설명

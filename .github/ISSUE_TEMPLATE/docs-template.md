@@ -1,29 +1,17 @@
 ---
 name: Docs template
 about: Describe this issue template's purpose here.
-title: ''
-labels: ''
-assignees: ''
-
----
-
----
-name: "[Docs] "
-about: README, API 명세, 주석 등 문서 관련 작업
-title: "[Docs] "
+title: 'Document:'
 labels: documentation
-assignees: sinyoung0403
+assignees: Tcimel, dnjs5024, YongLeeCode, sinyoung0403, escomputer, alpomjeong
 
 ---
 
----
-name: 📄 문서화
-about: README, API 명세, 주석 등 문서 관련 작업
-title: "[DOCS] "
-labels: documentation
-assignees: ''
-
----
+<!---
+name: 📝 문서작성
+about: 문서 작업 관련 이슈를 작성합니다.
+ex:"Document:클럽 관련 주석 추가"
+--->
 
 ## 📑 문서 대상
 어떤 문서를 작성하거나 수정할 건가요?

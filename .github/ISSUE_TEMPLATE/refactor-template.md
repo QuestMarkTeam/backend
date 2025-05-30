@@ -1,28 +1,16 @@
 ---
 name: Refactor template
 about: Describe this issue template's purpose here.
-title: ''
-labels: ''
-assignees: ''
-
----
-
----
-name: "[Refactor]"
-about: 리팩토링 템플릿
-title: "[Refactor] "
+title: 'Refactor:'
 labels: refactor
-assignees: sinyoung0403
+assignees: alpomjeong, dnjs5024, escomputer, sinyoung0403, Tcimel, YongLeeCode
 
 ---
 
 <!---
 name: 🔧 리팩토링
 about: 기존 코드 개선이 필요한 부분을 기록합니다.
-title: "[REFACTOR] "
-labels: refactor
-assignees: ''
-
+ex:"Refactor:인스턴스화 방식을 정적팩토링으로 리팩토링"
 --->
 
 ## 🔨 리팩토링 대상
