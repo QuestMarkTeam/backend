@@ -1,0 +1,60 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.5.0'
+    id 'io.spring.dependency-management' version '1.1.7'
+//    id 'java-library' <- 안되면 이거 ㄱㄱ
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Core dependencies
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // Core dependencies
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // Devtools
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // Runtime-only JDBC drivers
+    runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // Test dependencies
+    testImplementation      'org.springframework.boot:spring-boot-starter-test'
+    testImplementation      'org.springframework.boot:spring-boot-testcontainers'
+    testImplementation      'org.testcontainers:junit-jupiter'
+    testImplementation      'org.testcontainers:mysql'
+    testRuntimeOnly         'org.junit.platform:junit-platform-launcher'
+
+    // jwt
+    compileOnly group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.5'
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.5'
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.5'
+
+    // bcrypt
+    implementation 'at.favre.lib:bcrypt:0.10.2'
+
+    //security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    // Redisson
+    implementation 'org.redisson:redisson-spring-boot-starter:3.27.1'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
